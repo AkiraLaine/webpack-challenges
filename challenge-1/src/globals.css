@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+#app {
+  background-color: #ddd;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 3em;
+}
