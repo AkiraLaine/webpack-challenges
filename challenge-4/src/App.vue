@@ -1,8 +1,8 @@
 <template>
   <div class='app'>
-    <h1>Hello World</h1>
+    <h1>Goodbye World</h1>
     <h4>This is webpack challenge 4</h4>
-    <p>TURN DOWN THE WHAT</p>
+    <p>ITS TOOOOO LATE</p>
   </div>
 </template>
 
