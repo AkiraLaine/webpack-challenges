@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webpack challenge 5</title>
+<link href="styles.css" rel="stylesheet"></head>
+<body>
+  <div id='app'></div>
+
+  <!-- Webpack bundle will be auto-injected -->
+  <script>
+    let interval = setInterval(() => {
+      console.log('mamamia')
+      if (window.__whmEventSourceWrapper && Object.keys(window.__whmEventSourceWrapper).length > 0){
+        clearInterval(interval)
+        window.__whmEventSourceWrapper['/__webpack_hmr'].addMessageListener(x => {
+          if (JSON.parse(x.data) === 'HTML_CHANGED') window.location.reload()
+        })
+      }
+    }, 100)
+  </script>
+<script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="app.js"></script></body>
+</html>
